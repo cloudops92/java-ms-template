@@ -1,4 +1,4 @@
-package com.ms92.mcloud;
+package in.ms92.mcloud;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

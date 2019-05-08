@@ -40,10 +40,10 @@ dependencies {
 
 ext{
     appName = 'java-ms-template'
-    groupName = "com.ms92.mcloud"
+    groupName = "in.ms92.mcloud"
 }
 
 // Define the main class for the application
-mainClassName = 'com.ms92.mcloud.App'
+mainClassName = 'in.ms92.mcloud.App'
 
 
