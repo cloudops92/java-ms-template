@@ -1,0 +1,11 @@
+version: '3'
+services:
+  java-ms-template:
+    build:
+      context: .
+      args:
+        service: java-ms-template
+    ports:
+      - "8080"
+    environment:
+      - APPLICATION_NAME=java-ms-template
