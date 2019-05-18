@@ -2,11 +2,11 @@
 This is java micro-service template. This template allows to build and deploy docker image simply.
 This template is very basic having integration of spring boot > 2.
 
-Basic knowledge of the [Gradle]('https://gradle.org') and [Docker]('https://www.docker.com/') is 
+Basic knowledge of the [Gradle](https://gradle.org) and [Docker](https://www.docker.com/) is 
 require.
 
 ## Building and Generating docker image
-We uses the [Avast plugins]('https://github.com/avast/gradle-docker-compose-plugin') 
+We uses the [Avast plugins](https://github.com/avast/gradle-docker-compose-plugin) 
 that allows to configure and manager docker images.
 
 All configurations are present into the `configs/docker.gradle`
