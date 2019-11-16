@@ -34,13 +34,15 @@ dockerCompose.isRequiredBy(test)
 
 dockerCompose {
 
-    stopContainers = true // doesn't call `docker-compose down` if set to false - see below the paragraph about reconnecting; default is true
+    stopContainers = true
+    // doesn't call `docker-compose down` if set to false - see below the paragraph about reconnecting; default is true
     removeContainers = true // default is true
     removeImages = "None" // Other accepted values are: "All" and "Local"
     removeVolumes = true // default is true
     removeOrphans = false // removes containers for services not defined in the Compose file; default is false
 
-    projectName = '${project.name}' // allow to set custom docker-compose project name (defaults to a stable name derived from absolute path of the project), set to null to Docker Compose default (directory name)
+    projectName = '${project.name}'
+    // allow to set custom docker-compose project name (defaults to a stable name derived from absolute path of the project), set to null to Docker Compose default (directory name)
 }
 
 dependencies {
@@ -64,11 +66,11 @@ ext {
 // Define the main class for the application
 mainClassName = 'app.App'
 
-java{
-    sourceCompatibility =  JavaVersion.VERSION_11
-    targetCompatibility =  JavaVersion.VERSION_11
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
-wrapper{
+wrapper {
     gradleVersion = '6.0'
 }
