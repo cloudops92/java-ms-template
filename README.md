@@ -2,7 +2,8 @@
 This is java micro-service template. This template allows to build and deploy docker image simply.
 This template is very basic having integration of spring boot > 2.
 
-Basic knowledge of the [Gradle](https://gradle.org) and [Docker](https://www.docker.com) is 
+
+Basic knowledge of the [Gradle](https://gradle.org) and [Docker](https://www.docker.com/) is
 require.
 
 ## Building and Generating docker image
