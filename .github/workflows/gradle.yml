@@ -17,8 +17,8 @@ jobs:
         run: ./gradlew clean build
       - name: publish
         env:
-          ms92_release_token: ${{ secrets:ms92_release_token }}
+          release_token: ${{ secrets:ms92_release_token }}
         run: |
-          docker login docker.pkg.github.com --username mishalshah92 -p $ms92_release_token
+          docker login docker.pkg.github.com --username mishalshah92 -p $release_token
           docker tag java-ms-template_java-ms-template docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
           docker://docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
