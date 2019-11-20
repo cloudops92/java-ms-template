@@ -16,7 +16,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean build
       - name: publish
-        if: github.ref == 'master'
         run: |
           docker login docker.pkg.github.com --username mishalshah92
           docker tag java-ms-template_java-ms-template docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
