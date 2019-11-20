@@ -1,6 +1,6 @@
 # java-ms-template
 
-https://github.com/zero-templates/java-ms-template/workflows/java-ms-template-ci/badge.svg
+![](https://github.com/zero-templates/java-ms-template/workflows/java-ms-template-ci/badge.svg)
 
 This is java micro-service template. This template allows to build and deploy docker image simply.
 This template is very basic having integration of spring boot > 2.
