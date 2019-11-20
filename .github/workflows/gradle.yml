@@ -16,7 +16,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean build
       - name: publish
-        with:
+        env:
           ms92_release_token: ${{ secrets:ms92_release_token }}
         run: |
           docker login docker.pkg.github.com --username mishalshah92 -p $ms92_release_token
