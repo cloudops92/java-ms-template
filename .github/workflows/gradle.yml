@@ -19,4 +19,4 @@ jobs:
         run: docker tag java-ms-template_java-ms-template docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
       - name: publish
         if: github.ref == 'master'
-        uses: docker://docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:VERSION
+        uses: docker://docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
