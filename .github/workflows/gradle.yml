@@ -21,4 +21,4 @@ jobs:
         run: |
           docker login docker.pkg.github.com --username mishalshah92 -p $release-token
           docker tag java-ms-template_java-ms-template docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
-          docker push docker://docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
+          docker push docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
