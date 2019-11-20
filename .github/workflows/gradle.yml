@@ -14,3 +14,9 @@ jobs:
           java-version: 11.0.5
       - name: Build with Gradle
         run: ./gradlew clean build
+      - name: Prepare build
+        run: |
+          - docker tag java-ms-template_java-ms-template docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
+      - name: publish
+        if: github.ref == 'master'
+        uses: docker://docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:VERSION
