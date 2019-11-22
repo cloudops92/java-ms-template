@@ -41,7 +41,7 @@ dockerCompose {
     removeVolumes = true // default is true
     removeOrphans = false // removes containers for services not defined in the Compose file; default is false
 
-    projectName = '${project.name}'
+    projectName = null
     // allow to set custom docker-compose project name (defaults to a stable name derived from absolute path of the project), set to null to Docker Compose default (directory name)
 }
 
