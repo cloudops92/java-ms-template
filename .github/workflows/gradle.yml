@@ -16,9 +16,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean build
       - name: publish
-        env:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
         run: |
-          docker login docker.pkg.github.com --username mishalshah92 -p $repo-token
-          docker tag java-ms-template_java-ms-template docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
+          docker login docker.pkg.github.com -u mishalshah92 -p ${{ secrets.GITHUB_TOKEN }}
+          docker tag java-ms-template_java-ms-template:latest docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
           docker push docker.pkg.github.com/zero-templates/java-ms-template/java-ms-template:latest
