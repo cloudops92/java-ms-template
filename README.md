@@ -32,3 +32,7 @@ $ ./gradlew composeBuild
 ~~~~
 $ ./gradlew composeUp
 ~~~~
+
+## Communication
+
+- **Email**: lazzy.leoo@gmail.com
