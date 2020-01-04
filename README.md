@@ -1,6 +1,6 @@
 # java-ms-template
 
-![](https://github.com/lazy-leo/java-ms-template/workflows/java-ms-template-ci/badge.svg)
+![](https://github.com/mishalshah92/java-ms-template/workflows/java-ms-template-ci/badge.svg)
 
 This is java micro-service template. This template allows to build and deploy docker image simply.
 This template is very basic having integration of spring boot > 2.
@@ -35,4 +35,4 @@ $ ./gradlew composeUp
 
 ## Communication
 
-- **Email**: lazzy.leoo@gmail.com
+- **Email**: mishalshah92@gmail.com
