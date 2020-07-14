@@ -52,6 +52,8 @@ dependencies {
     //Spring boot
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'io.micrometer:micrometer-core:1.5.2'
+    compile 'io.micrometer:micrometer-registry-prometheus:1.5.2'
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
